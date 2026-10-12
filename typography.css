@@ -1,0 +1,42 @@
+/* Locally bundled, licensed typography. */
+@font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/Barlow-Regular.ttf') format('truetype')}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:500;font-display:swap;src:url('assets/fonts/Barlow-Medium.ttf') format('truetype')}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:600 900;font-display:swap;src:url('assets/fonts/Barlow-SemiBold.ttf') format('truetype')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/BarlowCondensed-SemiBold.ttf') format('truetype')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700 900;font-display:swap;src:url('assets/fonts/BarlowCondensed-Bold.ttf') format('truetype')}
+:root{--display:'Barlow Condensed','Arial Narrow',sans-serif;--sans:'Barlow',Arial,sans-serif}
+body,button,input,select,textarea{font-family:var(--sans);font-synthesis:none}
+body{font-weight:400}
+h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.015em}
+h1{font-weight:700;line-height:.94;letter-spacing:-.025em}
+h2{line-height:1;letter-spacing:-.018em}
+h3{line-height:1.05;letter-spacing:-.01em}
+.hero-punch{font-weight:600;letter-spacing:-.01em;line-height:1.04}
+.header-tag,.eyebrow,.hero-heading .eyebrow,.scene-eyebrow,.photo-stamp,.scene-steps a,.scene-steps a span,.scroll-hint,.text-link,.work-hint,.work-caption small,.work-bottom,.contact-person,.contact-grid>div>span,.news-meta,.service-number,.proof>span:last-child,.footer-top,.footer-bottom,.floating-call,.lightbox-close,.menu-toggle{font-family:var(--sans);font-weight:500;letter-spacing:.065em;font-variant-numeric:tabular-nums;line-height:1.5}
+nav{font-weight:500;letter-spacing:0}
+nav .nav-contact{font-weight:600;text-transform:none;letter-spacing:0}
+.button,.hero-bottom .button,.outline,form .button,.quote-result .button,.contact .button{font-family:var(--sans);font-weight:600;letter-spacing:.01em;font-size:1rem;line-height:1.4}
+form label{font-weight:500}
+select,textarea{font-weight:400}
+.form-note{font-family:var(--sans);font-weight:400;letter-spacing:0}
+.quote-result pre{font-family:var(--sans);font-weight:400;line-height:1.65}
+.manifesto-copy .lead{font-weight:500;letter-spacing:-.01em}
+.scene-description{font-weight:400;letter-spacing:0}
+.work-caption{font-weight:600;letter-spacing:-.01em;line-height:1.15}
+.work-caption small{font-weight:500;letter-spacing:.065em;line-height:1.5}
+.proof-year,.scene-number,.racing-number{font-family:var(--display);font-weight:600;letter-spacing:-.015em}
+.stage-ghost{font-weight:700}
+.phone{font-family:var(--sans);font-weight:500;font-size:clamp(1.75rem,2.8vw,2.625rem);line-height:1.35;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.email{font-weight:500;letter-spacing:-.01em}
+.quote-panel h3{font-weight:600;letter-spacing:-.02em}
+.footer-word{font-weight:600;letter-spacing:-.025em}
+@media(max-width:760px){
+ h1{line-height:.97;letter-spacing:-.018em}
+ .hero-punch{font-size:clamp(2rem,9.5vw,3.75rem);line-height:1.08}
+ .scene-steps a,.scene-steps a span{letter-spacing:.015em;font-weight:500}
+ .phone{font-size:clamp(1.625rem,6.5vw,2.25rem);letter-spacing:-.025em}
+ .contact .button{font-size:1rem}
+ .work-caption{line-height:1.15}
+}
+/* Keep capital-letter accents clear of punctuation on the preceding line. */
+.contact-top h2{line-height:1.14}
